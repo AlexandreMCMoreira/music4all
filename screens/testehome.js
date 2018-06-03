@@ -26,11 +26,11 @@ export default class Menu1234 extends React.Component {
     <Text style={{textAlign:'center', paddingTop:10, paddingBottom:10}}>Upload</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={onPressLearnMore} style={{ height: 45, width: 300, marginTop: 30,borderColor: 'black', borderWidth: 1 }}>
+        <TouchableOpacity onPress={()=> this.props.navigation.navigate('download123')} style={{ height: 45, width: 300, marginTop: 30,borderColor: 'black', borderWidth: 1 }}>
     <Text style={{textAlign:'center', paddingTop:10, paddingBottom:10}}>Download</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={onPressLearnMore} style={{ height: 45, width: 300, marginTop: 30,borderColor: 'black', borderWidth: 1 }}>
+        <TouchableOpacity onPress={()=> this.props.navigation.navigate('playon')} style={{ height: 45, width: 300, marginTop: 30,borderColor: 'black', borderWidth: 1 }}>
     <Text style={{textAlign:'center', paddingTop:10, paddingBottom:10}}>online</Text>
         </TouchableOpacity>
 
