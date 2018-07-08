@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, Alert ,TextInput, TouchableOpacity} from 'react-native';
-import { LinearGradient } from 'expo';
+
 import { createStackNavigator } from 'react-navigation';
 /*import * as firebase from 'firebase';*/
 
@@ -34,16 +34,7 @@ export default class Home2 extends React.Component {
   render() {
     return(
       <View style={styles.container}>
-        <LinearGradient
-           colors={['black', '#7D26CD', '#f702e7']}
-           style={{
-             position: 'absolute',
-             left: 0,
-             right: 0,
-             top: 0,
-             bottom: 0
-           }}
-         />
+        
         <Text style={{color: '#fff' ,fontSize:50 ,marginBottom:50}}>Login</Text>
         <Text style={{color: '#fff' ,fontSize:20}}>email:</Text>
         <TextInput style={{height: 40, width: 300,borderColor: 'transparent', borderWidth: 1 ,color: '#fff', fontSize:20 }}

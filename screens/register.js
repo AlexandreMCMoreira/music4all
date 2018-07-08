@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, Alert ,TextInput, TouchableOpacity} from 'react-native';
-import { LinearGradient } from 'expo';
+
 
 /*import * as firebase from 'firebase';*/
 
@@ -41,16 +41,7 @@ export default class Register extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <LinearGradient
-           colors={['black', '#7D26CD', '#f702e7']}
-           style={{
-             position: 'absolute',
-             left: 0,
-             right: 0,
-             top: 0,
-             bottom: 0
-           }}
-         />
+        
         <Text style={{color: '#fff' ,fontSize:50 ,marginBottom:50}}>Register</Text>
 
  <Text style={{color: '#fff' ,fontSize:20}}>Name:</Text>

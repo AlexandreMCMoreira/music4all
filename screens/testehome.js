@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { LinearGradient } from 'expo';
+
 import { StyleSheet, Text, View, Button, Alert, Image, requireNativeComponent,TouchableOpacity,TextInput } from 'react-native';
 
 import { createStackNavigator } from 'react-navigation';
@@ -8,17 +8,7 @@ export default class Menu1234 extends React.Component {
   static navigationOptions = { header: null };
   render() {
     return (
-      <LinearGradient
-      colors={['black', '#7D26CD', '#f702e7']}
-      style={{
-        position: 'absolute',
-        left: 0,
-        right: 0,
-        top: 0,
-        height:850,
-        
-      }}
-    >
+      
       <View style={styles.container}>
       <Image source={require('../images/logo_splash.png')} style = {{height: 180, width: 180, top:-100, }} />
 
@@ -46,7 +36,7 @@ export default class Menu1234 extends React.Component {
 
 
     </View>
-    </LinearGradient>
+    
     );
   }
 }
